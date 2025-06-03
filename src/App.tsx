@@ -45,6 +45,46 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Video Comparison Section */}
+        <section className="flex flex-col items-center gap-8 mt-12">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">شاهد مهاراتهم</h2>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-8 w-full">
+            {/* Messi Video Placeholder */}
+            <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg overflow-hidden">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Messi Skills"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="text-2xl font-semibold text-blue-800">أفضل مهارات ميسي</h3>
+              </div>
+            </div>
+
+            {/* Ronaldo Video Placeholder */}
+            <div className="w-full md:w-1/2 bg-white rounded-xl shadow-lg overflow-hidden">
+               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                  title="Ronaldo Skills"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+               <div className="p-4 text-center">
+                <h3 className="text-2xl font-semibold text-gold-800">أفضل مهارات رونالدو</h3>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
